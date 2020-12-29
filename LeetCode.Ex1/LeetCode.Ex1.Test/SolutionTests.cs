@@ -19,8 +19,8 @@ namespace LeetCode.Ex1.Test
         [Theory]
         [InlineData(new int[] { 2, 7, 11, 15 }, 1)]
         [InlineData(new int[] { 2, 7, 11, 15 }, 100)]
-        [InlineData(new int[] { 3, 2, 4 }, 5)]
-        [InlineData(new int[] { 3, 2, 4 }, 6)]
+        [InlineData(new int[] { 3, 2, 4 }, 4)]
+        [InlineData(new int[] { 3, 2, 4 }, 8)]
         public void ShouldReturnEmptyArrayWhenNoSolutionExists(int[] nums, int target)
         {
             var expectedResult = new int[] { };
