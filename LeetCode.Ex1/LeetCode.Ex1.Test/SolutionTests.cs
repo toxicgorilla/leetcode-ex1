@@ -11,7 +11,8 @@ namespace LeetCode.Ex1.Test
         [InlineData(new int[] { 3, 3 }, 6, new int[] { 0, 1 })]
         public void ShouldReturnCorrectResultWhenSolutionExists(int[] nums, int target, int[] expectedResult)
         {
-            var actualResult = Solution.TwoSum(nums, target);
+            var solution = new Solution();
+            var actualResult = solution.TwoSum(nums, target);
 
             actualResult.ShouldEqual(expectedResult);
         }
@@ -23,8 +24,9 @@ namespace LeetCode.Ex1.Test
         [InlineData(new int[] { 3, 2, 4 }, 8)]
         public void ShouldReturnEmptyArrayWhenNoSolutionExists(int[] nums, int target)
         {
+            var solution = new Solution();
             var expectedResult = new int[] { };
-            var actualResult = Solution.TwoSum(nums, target);
+            var actualResult = solution.TwoSum(nums, target);
 
             actualResult.ShouldEqual(expectedResult);
         }
